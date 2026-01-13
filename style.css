@@ -1,0 +1,144 @@
+/* Grundstil */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+.site-header {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #4b7f3b, #9ccf6b);
+    color: #fff;
+}
+
+.site-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-header p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Layout huvuddel */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Textdel */
+.text-box {
+    flex: 1 1 260px;
+}
+
+.text-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-box p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Knappar */
+.button-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.button-row button,
+form button {
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 600;
+    background: #4b7f3b;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
+}
+
+.button-row button:hover,
+form button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    opacity: 0.95;
+}
+
+/* Bilder */
+.image-box {
+    flex: 1 1 260px;
+    display: grid;
+    gap: 1rem;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    min-height: 160px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* “Läs mer” & “Kontakta oss”-sektioner */
+#moreInfo,
+#contactSection {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#moreInfo h2,
+#contactSection h2 {
+    margin-bottom: 0.6rem;
+}
+
+#moreInfo p,
+#contactSection p {
+    line-height: 1.5;
+}
+
+/* Formulär */
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    color: #666;
+}
